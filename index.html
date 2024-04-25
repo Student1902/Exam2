@@ -17,50 +17,6 @@
 
 <body class="font-rubik bg-dark bg-opacity-25">
     <div class="container py-4">
-
-        <div class="splide splide-banners" role="group" aria-label="Splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <div>
-                            <img src="img/image-01.jpg" alt="" class="img-fluid">
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div>
-                            <img src="img/image-02.jpg" alt="" class="img-fluid">
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div>
-                            <img src="img/image-03.jpg" alt="" class="img-fluid">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        .splide-banners .splide__pagination {
-            right: unset;
-            margin-left: 3rem;
-            margin-bottom: 3rem;
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide-banners', {
-                type: "loop",
-                autoplay: 1,
-                arrows: 0,
-                interval: 3e3,
-                pauseOnHover: 0,
-                perMove: 1,
-                perPage: 1,
-                gap: "1.5rem",
-            });
-            splide.mount();
-        });
-    </script>
-
         <div class="row align-items-center bg-danger">
             <div class="col py-5">
                 <div class="text-center py-5 h1 text-white">
@@ -102,9 +58,7 @@
         </div>
         <div class="row bg-white">
             <div class="col">
-                <div>
-                    <img src="img/image-01.jpg" alt="" class="w-100">
-                </div>
+                <img src="img/image-01.jpg" alt="" class="img-fluid">
             </div>
             <div class="col bg-white">
                 <div class="mx-5">
@@ -142,9 +96,44 @@
                 </div>
             </div>
             <div class="col-3">
-                <div>
-                    <img src="img/image-02.jpg" alt="" class="w-100">
+                <div class="splide splide-banners" role="group" aria-label="Splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="img/image-02.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="img/image-03.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- <style>
+                    .splide-banners .splide__pagination {
+                        right: unset;
+                        margin-left: 3rem;
+                        margin-bottom: 3rem;
+                    }
+                </style> -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var splide = new Splide('.splide-banners', {
+                            type: "loop",
+                            autoplay: 1,
+                            arrows: 0,
+                            interval: 3e3,
+                            pauseOnHover: 0,
+                            perMove: 1,
+                            perPage: 1,
+                            gap: "1.5rem",
+                        });
+                        splide.mount();
+                    });
+                </script>
             </div>
         </div>
         <div class="row mt-4 bg-white">
